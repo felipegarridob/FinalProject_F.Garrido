@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E102A158-AB76-4773-BD8A-84F21FF56F49}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CpPresentacion</RootNamespace>
+    <AssemblyName>CpPresentacion</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Consultas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas.Designer.cs">
+      <DependentUpon>Consultas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormActualizarProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormActualizarProveedor.Designer.cs">
+      <DependentUpon>FormActualizarProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioActualizar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioActualizar.Designer.cs">
+      <DependentUpon>FormularioActualizar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioActualizarTipo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioActualizarTipo.Designer.cs">
+      <DependentUpon>FormularioActualizarTipo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioNuevoTipoProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioNuevoTipoProducto.Designer.cs">
+      <DependentUpon>FormularioNuevoTipoProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioProductos.Designer.cs">
+      <DependentUpon>FormularioProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioProveedor.Designer.cs">
+      <DependentUpon>FormularioProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainProveedores.Designer.cs">
+      <DependentUpon>MainProveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainTipoProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainTipoProducto.Designer.cs">
+      <DependentUpon>MainTipoProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductoMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductoMain.Designer.cs">
+      <DependentUpon>ProductoMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Consultas.resx">
+      <DependentUpon>Consultas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormActualizarProveedor.resx">
+      <DependentUpon>FormActualizarProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioActualizar.resx">
+      <DependentUpon>FormularioActualizar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioActualizarTipo.resx">
+      <DependentUpon>FormularioActualizarTipo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioNuevoTipoProducto.resx">
+      <DependentUpon>FormularioNuevoTipoProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioProductos.resx">
+      <DependentUpon>FormularioProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioProveedor.resx">
+      <DependentUpon>FormularioProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainProveedores.resx">
+      <DependentUpon>MainProveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainTipoProducto.resx">
+      <DependentUpon>MainTipoProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductoMain.resx">
+      <DependentUpon>ProductoMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CpNegocio\CpNegocio.csproj">
+      <Project>{33a9773b-9b85-45ea-9ec0-60e609eee5bc}</Project>
+      <Name>CpNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entidades\Entidades.csproj">
+      <Project>{f2cd9b8e-baef-4d07-88a6-2ae22315d4e9}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
