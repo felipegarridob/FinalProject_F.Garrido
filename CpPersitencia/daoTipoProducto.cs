@@ -12,7 +12,11 @@ namespace CpPersitencia
 {
    public  class daoTipoProducto
     {
-        private string cadena = @"Data Source=DESKTOP-RBBEAOT;Initial Catalog=PROYECTOFINAL;Integrated Security=True";
+        //************Autenticacion de Windows*********************************
+        //private string cadena = @"Data Source=DESKTOP-RBBEAOT;Initial Catalog=PROYECTOFINAL;Integrated Security=True";
+
+        //************Autenticacion usuario registrado en DB*******************************************************************
+        private string cadena = @"Data Source=DESKTOP-RBBEAOT;Initial Catalog=PROYECTOFINAL; user id = sa; password = Felgar.1982";
 
 
         public SqlConnection AbrirConexion()
